@@ -1,6 +1,13 @@
 ## Usage
 
-build assembly sample
+### compile to assembles and run
+```sh
+$ cargo run | bash assemble.sh
+$ ./a.out
+$ echo $status
+```
+
+### build assembly sample
 
 ```sh
 $ brew install nasm
