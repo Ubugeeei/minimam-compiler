@@ -27,6 +27,11 @@ $ ./a.out
 $ echo $?
 ```
 
+
+https://user-images.githubusercontent.com/71201308/162620197-755e1067-fe4f-4327-84fc-d1900c213bb2.mov
+
+
+
 ### build assembly sample
 
 ```sh
