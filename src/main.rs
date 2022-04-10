@@ -1,11 +1,12 @@
+use crate::core::{
+    parse::{generate_expr, parse},
+    tokenize::tokenize,
+};
+
+mod core;
+
 fn main() {
-    println!("global _main");
-    println!("\n");
-    println!("_main:");
-    println!("    xor eax, eax");
-    println!("    xor ebx, ebx");
-    println!("    mov eax, 2");
-    println!("    mov ebx, 7");
-    println!("    add eax, ebx");
-    println!("    ret");
+    let tokens = tokenize(" 12 / 3 ; ");
+    let expr = parse(&tokens, 0);
+    generate_expr(&expr);
 }
